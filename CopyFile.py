@@ -18,6 +18,7 @@ for i in date_1:
     if i == ':': date_2 += '-'
     else: date_2 += i
 
+if os.path.isdir('.\Logs') == False: os.makedirs('.\Logs')
 str6 = 0
 def write_to_file_log(text, OpenText = 'a', NewLine = '\n', Type = 'DEBUG'):            #DEBUG, INFO, ERROR
     if str6 == 1:
